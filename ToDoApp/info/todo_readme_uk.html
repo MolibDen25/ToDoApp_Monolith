@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ToDoApp Monolith — README (Українською)</title>
+        <style>
+        body{font-family: Arial, Helvetica, sans-serif; margin: 24px; line-height:1.5; color:#222}
+        header{display:flex;justify-content:space-between;align-items:center}
+        h1{margin-bottom:0}
+        .nav{margin-top:8px}
+        img{max-width:100%;border:1px solid #ddd;padding:6px;background:#fff;margin-bottom:12px}
+        .section{margin-top:18px}kbd{background:#eee;border-radius:4px;padding:2px 6px;border:1px solid #ccc}
+        .card{background:#fafafa;padding:12px;border:1px solid #eee;border-radius:6px}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>ToDoApp Monolith — README</h1>
+            </div>
+            <div style="text-align:right;color:#666">C# console • Monolith • notes/*.txt</div>
+        </header>
+
+        <div class="section card">
+            <h2>Коротко</h2>
+            <p>
+                Консольний застосунок для ведення нотаток у форматі <strong>ToDo</strong> з архітектурою <strong>Monolith</strong>. 
+                Дані зберігаються у папці <code>notes</code> у форматі <code>.txt</code>. 
+                Програма підтримує закреслення, редагування та видалення нотаток і рядків.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Структура проєкту</h2>
+            <pre class="card">ToDoApp/
+├── info/       # Папка з README
+├── Program.cs  # Сама програма
+└── notes/      # Тека збережених нотаток (створюється автоматично)
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>Запуск</h2>
+            <div class="card">
+                <p>1. Встановити .NET SDK (6.0+). Перевірити можна у терміналі:</p>
+                <pre><code>dotnet --version</code></pre>
+                <p>2. На Windows за допомогою ярлика <code>ToDoApp</code> або <code>run_todo.bat</code>.</p>
+                <p>Або у терміналі:</p>
+                <pre><code>cd ToDoApp
+dotnet run</code></pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Вигляд меню</h2>
+            <p>Нижче — кілька зразків інтерфейсу (консольних меню):</p>
+            <h3>1) Головне меню</h3>
+            <img src="assets/menu_main.png" alt="Головне меню">
+            <h3>2) Меню нотатків</h3>
+            <img src="assets/menu_notes.png" alt="Меню нотатків">
+            <h3>3) Меню рядків нотатка</h3>
+            <img src="assets/menu_note_open.png" alt="Меню рядків нотатка">
+        </div>
+
+        <div class="section">
+            <h2>Приклад збережених даних</h2>
+            <p>Приклад файлу <code>notes/2.txt</code>:</p>
+            <img src="assets/saved_example.png" alt="Приклад збережених даних">
+        </div>
+
+        <div class="section">
+            <h2>Керування</h2>
+            <div class="card">
+                <p>Основні клавіші та команди:</p>
+                <ul>
+                    <li><kbd>1</kbd> — вибрати пункт/нотаток</li>
+                    <li><kbd>+</kbd> — додати новий нотаток/рядок</li>
+                    <li><kbd>~№</kbd> — закреслити/розкреслити нотатку або рядок</li>
+                    <li><kbd>-№</kbd> — видалити нотатку або рядок</li>
+                    <li><kbd>Enter</kbd> — зберегти редагування рядка</li>
+                    <li><kbd>Esc</kbd> — скасувати редагування</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer style="margin-top:30px;color:#666">README · Підтримка української версії</footer>
+        <footer style="margin-top:30px;color:#666">Цей проєкт ліцензовано за ліцензією MIT — детальніше див. файл [LICENSE].</footer>
+    </body>
+</html>
